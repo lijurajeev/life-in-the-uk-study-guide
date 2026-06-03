@@ -166,7 +166,7 @@
             border-radius: 8px;
             padding: 12px 13px 11px;
             box-shadow: var(--shadow);
-            min-height: 172px;
+            min-height: 132px;
             display: flex;
             flex-direction: column;
             gap: 6px;
@@ -209,18 +209,12 @@
             font-size: 13px;
             overflow-wrap: anywhere;
         }
-        .hook {
-            margin: auto 0 0;
-            color: #0d5b49;
-            font-size: 12px;
-            font-weight: 700;
-            border-top: 1px solid var(--line);
-            padding-top: 7px;
-            overflow-wrap: anywhere;
-        }
         .source {
             color: var(--muted);
             font-size: 11px;
+            margin-top: auto;
+            border-top: 1px solid var(--line);
+            padding-top: 7px;
         }
         .hidden {
             display: none !important;
@@ -284,7 +278,7 @@
         <header>
             <div>
                 <h1>People To Remember From 1900 Onward</h1>
-                <p class="intro">Built from the Life in the UK reference text, transcripts, question inventory, and generated dashboards. Main scope: 20th/21st-century relevance, including earlier-born people whose named work, public role, death, or impact falls in 1900 onward. Older anchors are separated at the end so they do not distract from the modern list.</p>
+                <p class="intro">Built from the Life in the UK reference text, transcripts, question inventory, and generated dashboards. Main scope: 20th/21st-century relevance, including earlier-born people whose named work, public role, death, or impact falls in 1900 onward. Each card keeps one recognition fact only for quick scanning.</p>
             </div>
             <aside class="count-panel" aria-label="People count">
                 <div class="total">165 entries</div>
@@ -293,7 +287,7 @@
         </header>
 
         <div class="controls" aria-label="Filters">
-            <input id="search" class="search" type="search" placeholder="Search person, topic, source, or memory hook" />
+            <input id="search" class="search" type="search" placeholder="Search person, topic, source, or note" />
             <div class="filters">
                 <button class="filter active" type="button" data-filter="All">All</button>
                 <button class="filter" type="button" data-filter="Core">Core</button>
@@ -312,386 +306,354 @@
                 </div>
                 <div class="card-grid">
                     
-            <article class="person-card" data-priority="Core" data-search="politics, war &amp; public life emmeline pankhurst 1858-1928 core reference + transcripts suffrage leader who founded key women&#x27;s voting-rights groups and is linked with women gaining the vote in 1918 and equal voting age in 1928. pankhurst = votes for women.">
+            <article class="person-card" data-priority="Core" data-search="politics, war &amp; public life emmeline pankhurst 1858-1928 core reference + transcripts suffrage leader who founded key women&#x27;s voting-rights groups and is linked with women gaining the vote in 1918 and equal voting age in 1928.">
                 <div class="card-top">
                     <h3>Emmeline Pankhurst</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1858-1928</div>
                 <p class="note">Suffrage leader who founded key women&#x27;s voting-rights groups and is linked with women gaining the vote in 1918 and equal voting age in 1928.</p>
-                <p class="hook">Pankhurst = votes for women.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life archduke franz ferdinand 1863-1914 official reference his assassination on 28 june 1914 triggered the chain of events leading to the first world war. franz ferdinand = spark for wwi.">
+            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life archduke franz ferdinand 1863-1914 official reference his assassination on 28 june 1914 triggered the chain of events leading to the first world war.">
                 <div class="card-top">
                     <h3>Archduke Franz Ferdinand</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1863-1914</div>
                 <p class="note">His assassination on 28 June 1914 triggered the chain of events leading to the First World War.</p>
-                <p class="hook">Franz Ferdinand = spark for WWI.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life adolf hitler 1889-1945 official reference + transcripts german dictator whose invasion of poland in 1939 led britain and france to declare war on germany. hitler invades poland = wwii begins for britain.">
+            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life adolf hitler 1889-1945 official reference + transcripts german dictator whose invasion of poland in 1939 led britain and france to declare war on germany.">
                 <div class="card-top">
                     <h3>Adolf Hitler</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1889-1945</div>
                 <p class="note">German dictator whose invasion of Poland in 1939 led Britain and France to declare war on Germany.</p>
-                <p class="hook">Hitler invades Poland = WWII begins for Britain.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="politics, war &amp; public life winston churchill 1874-1965 core reference + transcripts wartime prime minister from may 1940 who refused surrender to nazi germany and was voted the greatest briton in a 2002 public vote. churchill = wwii pm and 2002 greatest briton.">
+            <article class="person-card" data-priority="Core" data-search="politics, war &amp; public life winston churchill 1874-1965 core reference + transcripts wartime prime minister from may 1940 who refused surrender to nazi germany and was voted the greatest briton in a 2002 public vote.">
                 <div class="card-top">
                     <h3>Winston Churchill</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1874-1965</div>
                 <p class="note">Wartime Prime Minister from May 1940 who refused surrender to Nazi Germany and was voted the greatest Briton in a 2002 public vote.</p>
-                <p class="hook">Churchill = WWII PM and 2002 greatest Briton.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="politics, war &amp; public life clement attlee 1883-1967 core reference + transcripts labour prime minister from 1945 to 1951 whose government created the nhs, social security reforms, and nationalised major industries. attlee after the war = welfare state.">
+            <article class="person-card" data-priority="Core" data-search="politics, war &amp; public life clement attlee 1883-1967 core reference + transcripts labour prime minister from 1945 to 1951 whose government created the nhs, social security reforms, and nationalised major industries.">
                 <div class="card-top">
                     <h3>Clement Attlee</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1883-1967</div>
                 <p class="note">Labour Prime Minister from 1945 to 1951 whose government created the NHS, social security reforms, and nationalised major industries.</p>
-                <p class="hook">Attlee after the war = welfare state.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="politics, war &amp; public life william beveridge 1879-1963 core reference + timeline social reformer whose 1942 beveridge report gave the blueprint for the modern welfare state. beveridge report = welfare blueprint.">
+            <article class="person-card" data-priority="Core" data-search="politics, war &amp; public life william beveridge 1879-1963 core reference + timeline social reformer whose 1942 beveridge report gave the blueprint for the modern welfare state.">
                 <div class="card-top">
                     <h3>William Beveridge</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1879-1963</div>
                 <p class="note">Social reformer whose 1942 Beveridge Report gave the blueprint for the modern welfare state.</p>
-                <p class="hook">Beveridge Report = welfare blueprint.</p>
                 <div class="source">Reference + timeline</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="politics, war &amp; public life aneurin bevan 1897-1960 core reference minister for health who led the establishment of the national health service in 1948. bevan builds the nhs.">
+            <article class="person-card" data-priority="Core" data-search="politics, war &amp; public life aneurin bevan 1897-1960 core reference minister for health who led the establishment of the national health service in 1948.">
                 <div class="card-top">
                     <h3>Aneurin Bevan</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1897-1960</div>
                 <p class="note">Minister for Health who led the establishment of the National Health Service in 1948.</p>
-                <p class="hook">Bevan builds the NHS.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life r. a. butler 1902-1982 official reference conservative politician associated with the education act 1944, which introduced free secondary education in england and wales. butler act = free secondary education.">
+            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life r. a. butler 1902-1982 official reference conservative politician associated with the education act 1944, which introduced free secondary education in england and wales.">
                 <div class="card-top">
                     <h3>R. A. Butler</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1902-1982</div>
                 <p class="note">Conservative politician associated with the Education Act 1944, which introduced free secondary education in England and Wales.</p>
-                <p class="hook">Butler Act = free secondary education.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life harold macmillan 1894-1986 official reference + transcripts prime minister famous in the handbook for his &#x27;wind of change&#x27; speech about decolonisation and independence. macmillan = wind of change.">
+            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life harold macmillan 1894-1986 official reference + transcripts prime minister famous in the handbook for his &#x27;wind of change&#x27; speech about decolonisation and independence.">
                 <div class="card-top">
                     <h3>Harold Macmillan</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1894-1986</div>
                 <p class="note">Prime Minister famous in the handbook for his &#x27;wind of change&#x27; speech about decolonisation and independence.</p>
-                <p class="hook">Macmillan = wind of change.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life john maynard keynes 1883-1946 official reference economist whose influential theories are mentioned in the inter-war period. keynes = modern economics.">
+            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life john maynard keynes 1883-1946 official reference economist whose influential theories are mentioned in the inter-war period.">
                 <div class="card-top">
                     <h3>John Maynard Keynes</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1883-1946</div>
                 <p class="note">Economist whose influential theories are mentioned in the inter-war period.</p>
-                <p class="hook">Keynes = modern economics.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life john major 1943- official reference prime minister after margaret thatcher, linked in the reference with helping establish the northern ireland peace process. major = peace process after thatcher.">
+            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life john major 1943- official reference prime minister after margaret thatcher, linked in the reference with helping establish the northern ireland peace process.">
                 <div class="card-top">
                     <h3>John Major</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1943-</div>
                 <p class="note">Prime Minister after Margaret Thatcher, linked in the reference with helping establish the Northern Ireland peace process.</p>
-                <p class="hook">Major = peace process after Thatcher.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="politics, war &amp; public life margaret thatcher 1925-2013 core reference + transcripts first woman prime minister of the uk, serving from 1979 to 1990 and becoming the longest-serving prime minister of the 20th century. thatcher = first woman pm.">
+            <article class="person-card" data-priority="Core" data-search="politics, war &amp; public life margaret thatcher 1925-2013 core reference + transcripts first woman prime minister of the uk, serving from 1979 to 1990 and becoming the longest-serving prime minister of the 20th century.">
                 <div class="card-top">
                     <h3>Margaret Thatcher</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1925-2013</div>
                 <p class="note">First woman Prime Minister of the UK, serving from 1979 to 1990 and becoming the longest-serving Prime Minister of the 20th century.</p>
-                <p class="hook">Thatcher = first woman PM.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Context" data-search="politics, war &amp; public life ronald reagan 1911-2004 context reference us president mentioned because thatcher worked closely with him during late cold war changes. reagan = thatcher&#x27;s us ally.">
+            <article class="person-card" data-priority="Context" data-search="politics, war &amp; public life ronald reagan 1911-2004 context reference us president mentioned because thatcher worked closely with him during late cold war changes.">
                 <div class="card-top">
                     <h3>Ronald Reagan</h3>
                     <span class="badge context">Context</span>
                 </div>
                 <div class="years">1911-2004</div>
                 <p class="note">US President mentioned because Thatcher worked closely with him during late Cold War changes.</p>
-                <p class="hook">Reagan = Thatcher&#x27;s US ally.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="politics, war &amp; public life tony blair 1953- core reference + transcripts labour prime minister elected in 1997, linked with devolution and the good friday agreement. blair = 1997 labour, devolution, good friday.">
+            <article class="person-card" data-priority="Core" data-search="politics, war &amp; public life tony blair 1953- core reference + transcripts labour prime minister elected in 1997, linked with devolution and the good friday agreement.">
                 <div class="card-top">
                     <h3>Tony Blair</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1953-</div>
                 <p class="note">Labour Prime Minister elected in 1997, linked with devolution and the Good Friday Agreement.</p>
-                <p class="hook">Blair = 1997 Labour, devolution, Good Friday.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life gordon brown 1951- official reference prime minister who took over from tony blair in 2007 in the handbook timeline. brown follows blair.">
+            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life gordon brown 1951- official reference prime minister who took over from tony blair in 2007 in the handbook timeline.">
                 <div class="card-top">
                     <h3>Gordon Brown</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1951-</div>
                 <p class="note">Prime Minister who took over from Tony Blair in 2007 in the handbook timeline.</p>
-                <p class="hook">Brown follows Blair.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="politics, war &amp; public life david cameron 1966- core reference + transcripts conservative leader who became prime minister in the 2010 coalition government. cameron = 2010 coalition pm.">
+            <article class="person-card" data-priority="Core" data-search="politics, war &amp; public life david cameron 1966- core reference + transcripts conservative leader who became prime minister in the 2010 coalition government.">
                 <div class="card-top">
                     <h3>David Cameron</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1966-</div>
                 <p class="note">Conservative leader who became Prime Minister in the 2010 coalition government.</p>
-                <p class="hook">Cameron = 2010 coalition PM.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Transcript" data-search="politics, war &amp; public life nick clegg 1967- transcript transcripts liberal democrat leader used in the transcripts as the deputy prime minister example during the 2010 coalition. clegg = coalition deputy.">
+            <article class="person-card" data-priority="Transcript" data-search="politics, war &amp; public life nick clegg 1967- transcript transcripts liberal democrat leader used in the transcripts as the deputy prime minister example during the 2010 coalition.">
                 <div class="card-top">
                     <h3>Nick Clegg</h3>
                     <span class="badge transcript">Transcript</span>
                 </div>
                 <div class="years">1967-</div>
                 <p class="note">Liberal Democrat leader used in the transcripts as the Deputy Prime Minister example during the 2010 coalition.</p>
-                <p class="hook">Clegg = coalition deputy.</p>
                 <div class="source">Transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life theresa may 1956- official updated reference named in the updated reference as one of the conservative prime ministers during the 2015 to 2024 period. may = post-2016 conservative pm.">
+            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life theresa may 1956- official updated reference named in the updated reference as one of the conservative prime ministers during the 2015 to 2024 period.">
                 <div class="card-top">
                     <h3>Theresa May</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1956-</div>
                 <p class="note">Named in the updated reference as one of the Conservative Prime Ministers during the 2015 to 2024 period.</p>
-                <p class="hook">May = post-2016 Conservative PM.</p>
                 <div class="source">Updated reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life boris johnson 1964- official updated reference named in the updated reference as a conservative prime minister in the 2015 to 2024 government period. johnson = conservative pm in brexit/covid era.">
+            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life boris johnson 1964- official updated reference named in the updated reference as a conservative prime minister in the 2015 to 2024 government period.">
                 <div class="card-top">
                     <h3>Boris Johnson</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1964-</div>
                 <p class="note">Named in the updated reference as a Conservative Prime Minister in the 2015 to 2024 government period.</p>
-                <p class="hook">Johnson = Conservative PM in Brexit/COVID era.</p>
                 <div class="source">Updated reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life liz truss 1975- official updated reference named in the updated reference as one of the conservative prime ministers between 2015 and 2024. truss = short 2022 premiership.">
+            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life liz truss 1975- official updated reference named in the updated reference as one of the conservative prime ministers between 2015 and 2024.">
                 <div class="card-top">
                     <h3>Liz Truss</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1975-</div>
                 <p class="note">Named in the updated reference as one of the Conservative Prime Ministers between 2015 and 2024.</p>
-                <p class="hook">Truss = short 2022 premiership.</p>
                 <div class="source">Updated reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life rishi sunak 1980- official updated reference named in the updated reference as a conservative prime minister before the 2024 general election. sunak = conservative pm before 2024 election.">
+            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life rishi sunak 1980- official updated reference named in the updated reference as a conservative prime minister before the 2024 general election.">
                 <div class="card-top">
                     <h3>Rishi Sunak</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1980-</div>
                 <p class="note">Named in the updated reference as a Conservative Prime Minister before the 2024 general election.</p>
-                <p class="hook">Sunak = Conservative PM before 2024 election.</p>
                 <div class="source">Updated reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life keir starmer 1962- official updated reference + generated guide named in the updated reference as the labour leader whose party won the 2024 general election and formed the government. starmer = labour government from 2024 in this content.">
+            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life keir starmer 1962- official updated reference + generated guide named in the updated reference as the labour leader whose party won the 2024 general election and formed the government.">
                 <div class="card-top">
                     <h3>Keir Starmer</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1962-</div>
                 <p class="note">Named in the updated reference as the Labour leader whose party won the 2024 general election and formed the government.</p>
-                <p class="hook">Starmer = Labour government from 2024 in this content.</p>
                 <div class="source">Updated reference + generated guide</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life queen elizabeth ii 1926-2022 official reference + transcripts modern monarch linked with the 2012 diamond jubilee, elizabeth tower, and the transition from queen to king in public wording. elizabeth ii = diamond jubilee and elizabeth tower.">
+            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life queen elizabeth ii 1926-2022 official reference + transcripts modern monarch linked with the 2012 diamond jubilee, elizabeth tower, and the transition from queen to king in public wording.">
                 <div class="card-top">
                     <h3>Queen Elizabeth II</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1926-2022</div>
                 <p class="note">Modern monarch linked with the 2012 Diamond Jubilee, Elizabeth Tower, and the transition from Queen to King in public wording.</p>
-                <p class="hook">Elizabeth II = Diamond Jubilee and Elizabeth Tower.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life king charles iii 1948- official transcripts + generated guide modern monarch mentioned in updated study notes where wording changes from queen to king after elizabeth ii. charles iii = god save the king wording.">
+            <article class="person-card" data-priority="Official" data-search="politics, war &amp; public life king charles iii 1948- official transcripts + generated guide modern monarch mentioned in updated study notes where wording changes from queen to king after elizabeth ii.">
                 <div class="card-top">
                     <h3>King Charles III</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1948-</div>
                 <p class="note">Modern monarch mentioned in updated study notes where wording changes from Queen to King after Elizabeth II.</p>
-                <p class="hook">Charles III = God Save the King wording.</p>
                 <div class="source">Transcripts + generated guide</div>
             </article>
             
 
-            <article class="person-card" data-priority="Context" data-search="politics, war &amp; public life king george vi 1895-1952 context reference mentioned because william walton wrote coronation marches for him and queen elizabeth ii. george vi = walton coronation music.">
+            <article class="person-card" data-priority="Context" data-search="politics, war &amp; public life king george vi 1895-1952 context reference mentioned because william walton wrote coronation marches for him and queen elizabeth ii.">
                 <div class="card-top">
                     <h3>King George VI</h3>
                     <span class="badge context">Context</span>
                 </div>
                 <div class="years">1895-1952</div>
                 <p class="note">Mentioned because William Walton wrote coronation marches for him and Queen Elizabeth II.</p>
-                <p class="hook">George VI = Walton coronation music.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Transcript" data-search="politics, war &amp; public life anthony eden 1897-1977 transcript transcripts post-war conservative prime minister named in the scripts as background rather than a high-priority test answer. eden = transcript-only pm background.">
+            <article class="person-card" data-priority="Transcript" data-search="politics, war &amp; public life anthony eden 1897-1977 transcript transcripts post-war conservative prime minister named in the scripts as background rather than a high-priority test answer.">
                 <div class="card-top">
                     <h3>Anthony Eden</h3>
                     <span class="badge transcript">Transcript</span>
                 </div>
                 <div class="years">1897-1977</div>
                 <p class="note">Post-war Conservative Prime Minister named in the scripts as background rather than a high-priority test answer.</p>
-                <p class="hook">Eden = transcript-only PM background.</p>
                 <div class="source">Transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Transcript" data-search="politics, war &amp; public life alec douglas-home 1903-1995 transcript transcripts post-war prime minister mentioned in the scripts as a low-priority background name. douglas-home = transcript-only pm background.">
+            <article class="person-card" data-priority="Transcript" data-search="politics, war &amp; public life alec douglas-home 1903-1995 transcript transcripts post-war prime minister mentioned in the scripts as a low-priority background name.">
                 <div class="card-top">
                     <h3>Alec Douglas-Home</h3>
                     <span class="badge transcript">Transcript</span>
                 </div>
                 <div class="years">1903-1995</div>
                 <p class="note">Post-war Prime Minister mentioned in the scripts as a low-priority background name.</p>
-                <p class="hook">Douglas-Home = transcript-only PM background.</p>
                 <div class="source">Transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Transcript" data-search="politics, war &amp; public life harold wilson 1916-1995 transcript transcripts labour prime minister mentioned in the scripts as background to post-war politics. wilson = transcript-only pm background.">
+            <article class="person-card" data-priority="Transcript" data-search="politics, war &amp; public life harold wilson 1916-1995 transcript transcripts labour prime minister mentioned in the scripts as background to post-war politics.">
                 <div class="card-top">
                     <h3>Harold Wilson</h3>
                     <span class="badge transcript">Transcript</span>
                 </div>
                 <div class="years">1916-1995</div>
                 <p class="note">Labour Prime Minister mentioned in the scripts as background to post-war politics.</p>
-                <p class="hook">Wilson = transcript-only PM background.</p>
                 <div class="source">Transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Transcript" data-search="politics, war &amp; public life edward heath 1916-2005 transcript transcripts prime minister mentioned in the scripts around the post-war and eec period. heath = eec-era pm context.">
+            <article class="person-card" data-priority="Transcript" data-search="politics, war &amp; public life edward heath 1916-2005 transcript transcripts prime minister mentioned in the scripts around the post-war and eec period.">
                 <div class="card-top">
                     <h3>Edward Heath</h3>
                     <span class="badge transcript">Transcript</span>
                 </div>
                 <div class="years">1916-2005</div>
                 <p class="note">Prime Minister mentioned in the scripts around the post-war and EEC period.</p>
-                <p class="hook">Heath = EEC-era PM context.</p>
                 <div class="source">Transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Transcript" data-search="politics, war &amp; public life james callaghan 1912-2005 transcript transcripts prime minister mentioned in the scripts as part of post-war political background. callaghan = transcript-only pm background.">
+            <article class="person-card" data-priority="Transcript" data-search="politics, war &amp; public life james callaghan 1912-2005 transcript transcripts prime minister mentioned in the scripts as part of post-war political background.">
                 <div class="card-top">
                     <h3>James Callaghan</h3>
                     <span class="badge transcript">Transcript</span>
                 </div>
                 <div class="years">1912-2005</div>
                 <p class="note">Prime Minister mentioned in the scripts as part of post-war political background.</p>
-                <p class="hook">Callaghan = transcript-only PM background.</p>
                 <div class="source">Transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Transcript" data-search="politics, war &amp; public life george w. bush 1946- transcript transcripts us president mentioned only in transcript context around iraq and afghanistan, not as a core life in the uk test person. bush = non-core foreign context.">
+            <article class="person-card" data-priority="Transcript" data-search="politics, war &amp; public life george w. bush 1946- transcript transcripts us president mentioned only in transcript context around iraq and afghanistan, not as a core life in the uk test person.">
                 <div class="card-top">
                     <h3>George W. Bush</h3>
                     <span class="badge transcript">Transcript</span>
                 </div>
                 <div class="years">1946-</div>
                 <p class="note">US President mentioned only in transcript context around Iraq and Afghanistan, not as a core Life in the UK test person.</p>
-                <p class="hook">Bush = non-core foreign context.</p>
                 <div class="source">Transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Transcript" data-search="politics, war &amp; public life the ayatollah 20th century transcript transcripts mentioned only as an iranian political figure shown in a spitting image satire example, not as a uk handbook study name. ayatollah = transcript-only satire context.">
+            <article class="person-card" data-priority="Transcript" data-search="politics, war &amp; public life the ayatollah 20th century transcript transcripts mentioned only as an iranian political figure shown in a spitting image satire example, not as a uk handbook study name.">
                 <div class="card-top">
                     <h3>The Ayatollah</h3>
                     <span class="badge transcript">Transcript</span>
                 </div>
                 <div class="years">20th century</div>
                 <p class="note">Mentioned only as an Iranian political figure shown in a Spitting Image satire example, not as a UK handbook study name.</p>
-                <p class="hook">Ayatollah = transcript-only satire context.</p>
                 <div class="source">Transcripts</div>
             </article>
             
@@ -705,230 +667,211 @@
                 </div>
                 <div class="card-grid">
                     
-            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention john logie baird 1888-1946 core reference scottish inventor who developed television in the 1920s and made a london-to-glasgow broadcast in 1932. baird = television.">
+            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention john logie baird 1888-1946 core reference scottish inventor who developed television in the 1920s and made a london-to-glasgow broadcast in 1932.">
                 <div class="card-top">
                     <h3>John Logie Baird</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1888-1946</div>
                 <p class="note">Scottish inventor who developed television in the 1920s and made a London-to-Glasgow broadcast in 1932.</p>
-                <p class="hook">Baird = television.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention sir robert watson-watt 1892-1973 core reference scottish scientist who developed radar for detecting enemy aircraft by radio waves. watson-watt = radar.">
+            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention sir robert watson-watt 1892-1973 core reference scottish scientist who developed radar for detecting enemy aircraft by radio waves.">
                 <div class="card-top">
                     <h3>Sir Robert Watson-Watt</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1892-1973</div>
                 <p class="note">Scottish scientist who developed radar for detecting enemy aircraft by radio waves.</p>
-                <p class="hook">Watson-Watt = radar.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="science, medicine &amp; invention sir bernard lovell 1913-2012 official reference scientist linked with radar work and the radio telescope at jodrell bank. lovell = jodrell bank telescope.">
+            <article class="person-card" data-priority="Official" data-search="science, medicine &amp; invention sir bernard lovell 1913-2012 official reference scientist linked with radar work and the radio telescope at jodrell bank.">
                 <div class="card-top">
                     <h3>Sir Bernard Lovell</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1913-2012</div>
                 <p class="note">Scientist linked with radar work and the radio telescope at Jodrell Bank.</p>
-                <p class="hook">Lovell = Jodrell Bank telescope.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention alan turing 1912-1954 core reference + timeline mathematician whose turing machine theory influenced computer science and the modern computer. turing = computer logic.">
+            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention alan turing 1912-1954 core reference + timeline mathematician whose turing machine theory influenced computer science and the modern computer.">
                 <div class="card-top">
                     <h3>Alan Turing</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1912-1954</div>
                 <p class="note">Mathematician whose Turing machine theory influenced computer science and the modern computer.</p>
-                <p class="hook">Turing = computer logic.</p>
                 <div class="source">Reference + timeline</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="science, medicine &amp; invention john macleod 1876-1935 official reference scottish physician and researcher named as the co-discoverer of insulin for treating diabetes. macleod = insulin.">
+            <article class="person-card" data-priority="Official" data-search="science, medicine &amp; invention john macleod 1876-1935 official reference scottish physician and researcher named as the co-discoverer of insulin for treating diabetes.">
                 <div class="card-top">
                     <h3>John MacLeod</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1876-1935</div>
                 <p class="note">Scottish physician and researcher named as the co-discoverer of insulin for treating diabetes.</p>
-                <p class="hook">MacLeod = insulin.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention francis crick 1916-2004 core reference british scientist awarded a nobel prize for work on the structure of dna. crick = dna structure.">
+            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention francis crick 1916-2004 core reference british scientist awarded a nobel prize for work on the structure of dna.">
                 <div class="card-top">
                     <h3>Francis Crick</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1916-2004</div>
                 <p class="note">British scientist awarded a Nobel Prize for work on the structure of DNA.</p>
-                <p class="hook">Crick = DNA structure.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention sir frank whittle 1907-1996 core reference + timeline raf engineer who developed the jet engine in britain in the 1930s. whittle = jet engine.">
+            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention sir frank whittle 1907-1996 core reference + timeline raf engineer who developed the jet engine in britain in the 1930s.">
                 <div class="card-top">
                     <h3>Sir Frank Whittle</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1907-1996</div>
                 <p class="note">RAF engineer who developed the jet engine in Britain in the 1930s.</p>
-                <p class="hook">Whittle = jet engine.</p>
                 <div class="source">Reference + timeline</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention sir christopher cockerell 1910-1999 core reference + timeline british inventor who invented the hovercraft in the 1950s. cockerell = hovercraft.">
+            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention sir christopher cockerell 1910-1999 core reference + timeline british inventor who invented the hovercraft in the 1950s.">
                 <div class="card-top">
                     <h3>Sir Christopher Cockerell</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1910-1999</div>
                 <p class="note">British inventor who invented the hovercraft in the 1950s.</p>
-                <p class="hook">Cockerell = hovercraft.</p>
                 <div class="source">Reference + timeline</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention james goodfellow 1937- core reference inventor of the cash-dispensing atm or cashpoint, first used by barclays in enfield in 1967. goodfellow = cashpoint.">
+            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention james goodfellow 1937- core reference inventor of the cash-dispensing atm or cashpoint, first used by barclays in enfield in 1967.">
                 <div class="card-top">
                     <h3>James Goodfellow</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1937-</div>
                 <p class="note">Inventor of the cash-dispensing ATM or cashpoint, first used by Barclays in Enfield in 1967.</p>
-                <p class="hook">Goodfellow = cashpoint.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="science, medicine &amp; invention sir robert edwards 1925-2013 official reference physiologist who pioneered ivf treatment in britain with patrick steptoe. edwards = ivf.">
+            <article class="person-card" data-priority="Official" data-search="science, medicine &amp; invention sir robert edwards 1925-2013 official reference physiologist who pioneered ivf treatment in britain with patrick steptoe.">
                 <div class="card-top">
                     <h3>Sir Robert Edwards</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1925-2013</div>
                 <p class="note">Physiologist who pioneered IVF treatment in Britain with Patrick Steptoe.</p>
-                <p class="hook">Edwards = IVF.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="science, medicine &amp; invention patrick steptoe 1913-1988 official reference gynaecologist who pioneered ivf treatment in britain with robert edwards. steptoe = ivf.">
+            <article class="person-card" data-priority="Official" data-search="science, medicine &amp; invention patrick steptoe 1913-1988 official reference gynaecologist who pioneered ivf treatment in britain with robert edwards.">
                 <div class="card-top">
                     <h3>Patrick Steptoe</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1913-1988</div>
                 <p class="note">Gynaecologist who pioneered IVF treatment in Britain with Robert Edwards.</p>
-                <p class="hook">Steptoe = IVF.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention sir ian wilmut 1944-2023 core reference scientist who led the team with keith campbell that first cloned a mammal, dolly the sheep, in 1996; the source text spells the name wilmot. wilmut = dolly the sheep.">
+            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention sir ian wilmut 1944-2023 core reference scientist who led the team with keith campbell that first cloned a mammal, dolly the sheep, in 1996; the source text spells the name wilmot.">
                 <div class="card-top">
                     <h3>Sir Ian Wilmut</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1944-2023</div>
                 <p class="note">Scientist who led the team with Keith Campbell that first cloned a mammal, Dolly the sheep, in 1996; the source text spells the name Wilmot.</p>
-                <p class="hook">Wilmut = Dolly the sheep.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention keith campbell 1954-2012 core reference scientist who worked with ian wilmut on the first successful cloning of a mammal, dolly the sheep. campbell = dolly the sheep.">
+            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention keith campbell 1954-2012 core reference scientist who worked with ian wilmut on the first successful cloning of a mammal, dolly the sheep.">
                 <div class="card-top">
                     <h3>Keith Campbell</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1954-2012</div>
                 <p class="note">Scientist who worked with Ian Wilmut on the first successful cloning of a mammal, Dolly the sheep.</p>
-                <p class="hook">Campbell = Dolly the sheep.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention sir peter mansfield 1933-2017 core reference british scientist named as the co-inventor of the mri scanner. mansfield = mri.">
+            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention sir peter mansfield 1933-2017 core reference british scientist named as the co-inventor of the mri scanner.">
                 <div class="card-top">
                     <h3>Sir Peter Mansfield</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1933-2017</div>
                 <p class="note">British scientist named as the co-inventor of the MRI scanner.</p>
-                <p class="hook">Mansfield = MRI.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention sir tim berners-lee 1955- core reference + timeline british inventor of the world wide web, with the first successful web information transfer on 25 december 1990. berners-lee = world wide web.">
+            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention sir tim berners-lee 1955- core reference + timeline british inventor of the world wide web, with the first successful web information transfer on 25 december 1990.">
                 <div class="card-top">
                     <h3>Sir Tim Berners-Lee</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1955-</div>
                 <p class="note">British inventor of the World Wide Web, with the first successful web information transfer on 25 December 1990.</p>
-                <p class="hook">Berners-Lee = World Wide Web.</p>
                 <div class="source">Reference + timeline</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention ernest rutherford 1871-1937 core reference + transcripts scientist linked in the content with splitting the atom and the manhattan project. rutherford = atom.">
+            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention ernest rutherford 1871-1937 core reference + transcripts scientist linked in the content with splitting the atom and the manhattan project.">
                 <div class="card-top">
                     <h3>Ernest Rutherford</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1871-1937</div>
                 <p class="note">Scientist linked in the content with splitting the atom and the Manhattan Project.</p>
-                <p class="hook">Rutherford = atom.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention alexander fleming 1881-1955 core reference + transcripts scottish doctor who discovered penicillin in 1928 and won the nobel prize in medicine in 1945. fleming fights infection.">
+            <article class="person-card" data-priority="Core" data-search="science, medicine &amp; invention alexander fleming 1881-1955 core reference + transcripts scottish doctor who discovered penicillin in 1928 and won the nobel prize in medicine in 1945.">
                 <div class="card-top">
                     <h3>Alexander Fleming</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1881-1955</div>
                 <p class="note">Scottish doctor who discovered penicillin in 1928 and won the Nobel Prize in Medicine in 1945.</p>
-                <p class="hook">Fleming fights infection.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="science, medicine &amp; invention howard florey 1898-1968 official reference scientist who helped develop fleming&#x27;s penicillin discovery into a usable medicine. florey = penicillin development.">
+            <article class="person-card" data-priority="Official" data-search="science, medicine &amp; invention howard florey 1898-1968 official reference scientist who helped develop fleming&#x27;s penicillin discovery into a usable medicine.">
                 <div class="card-top">
                     <h3>Howard Florey</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1898-1968</div>
                 <p class="note">Scientist who helped develop Fleming&#x27;s penicillin discovery into a usable medicine.</p>
-                <p class="hook">Florey = penicillin development.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="science, medicine &amp; invention ernst chain 1906-1979 official reference scientist who helped develop penicillin into a usable drug during the 1940s. chain = penicillin development.">
+            <article class="person-card" data-priority="Official" data-search="science, medicine &amp; invention ernst chain 1906-1979 official reference scientist who helped develop penicillin into a usable drug during the 1940s.">
                 <div class="card-top">
                     <h3>Ernst Chain</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1906-1979</div>
                 <p class="note">Scientist who helped develop penicillin into a usable drug during the 1940s.</p>
-                <p class="hook">Chain = penicillin development.</p>
                 <div class="source">Reference</div>
             </article>
             
@@ -942,290 +885,266 @@
                 </div>
                 <div class="card-grid">
                     
-            <article class="person-card" data-priority="Core" data-search="sport mary peters 1939- core reference athlete who won olympic gold in the pentathlon in 1972 and promoted sport and tourism in northern ireland. peters = pentathlon, northern ireland.">
+            <article class="person-card" data-priority="Core" data-search="sport mary peters 1939- core reference athlete who won olympic gold in the pentathlon in 1972 and promoted sport and tourism in northern ireland.">
                 <div class="card-top">
                     <h3>Mary Peters</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1939-</div>
                 <p class="note">Athlete who won Olympic gold in the pentathlon in 1972 and promoted sport and tourism in Northern Ireland.</p>
-                <p class="hook">Peters = pentathlon, Northern Ireland.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="sport dr sir ludwig guttman 1899-1980 core reference german refugee doctor whose work at stoke mandeville helped give rise to the paralympic games. guttman = paralympics origin.">
+            <article class="person-card" data-priority="Core" data-search="sport dr sir ludwig guttman 1899-1980 core reference german refugee doctor whose work at stoke mandeville helped give rise to the paralympic games.">
                 <div class="card-top">
                     <h3>Dr Sir Ludwig Guttman</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1899-1980</div>
                 <p class="note">German refugee doctor whose work at Stoke Mandeville helped give rise to the Paralympic Games.</p>
-                <p class="hook">Guttman = Paralympics origin.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="sport sir roger bannister 1929-2018 core reference first person in the world to run a mile in under four minutes, in 1954. bannister = four-minute mile.">
+            <article class="person-card" data-priority="Core" data-search="sport sir roger bannister 1929-2018 core reference first person in the world to run a mile in under four minutes, in 1954.">
                 <div class="card-top">
                     <h3>Sir Roger Bannister</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1929-2018</div>
                 <p class="note">First person in the world to run a mile in under four minutes, in 1954.</p>
-                <p class="hook">Bannister = four-minute mile.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="sport sir jackie stewart 1939- official reference scottish formula 1 driver who won the world championship three times. stewart = f1 champion.">
+            <article class="person-card" data-priority="Official" data-search="sport sir jackie stewart 1939- official reference scottish formula 1 driver who won the world championship three times.">
                 <div class="card-top">
                     <h3>Sir Jackie Stewart</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1939-</div>
                 <p class="note">Scottish Formula 1 driver who won the world championship three times.</p>
-                <p class="hook">Stewart = F1 champion.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="sport bobby moore 1941-1993 official reference captain of the england football team that won the 1966 world cup. bobby moore = 1966 football captain.">
+            <article class="person-card" data-priority="Official" data-search="sport bobby moore 1941-1993 official reference captain of the england football team that won the 1966 world cup.">
                 <div class="card-top">
                     <h3>Bobby Moore</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1941-1993</div>
                 <p class="note">Captain of the England football team that won the 1966 World Cup.</p>
-                <p class="hook">Bobby Moore = 1966 football captain.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="sport sir ian botham 1955- official reference england cricket captain who held important test cricket records for batting and bowling. botham = cricket all-rounder.">
+            <article class="person-card" data-priority="Official" data-search="sport sir ian botham 1955- official reference england cricket captain who held important test cricket records for batting and bowling.">
                 <div class="card-top">
                     <h3>Sir Ian Botham</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1955-</div>
                 <p class="note">England cricket captain who held important Test cricket records for batting and bowling.</p>
-                <p class="hook">Botham = cricket all-rounder.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="sport jayne torvill 1957- core reference + timeline ice dancer who won olympic gold in 1984 with christopher dean. torvill and dean = ice dancing.">
+            <article class="person-card" data-priority="Core" data-search="sport jayne torvill 1957- core reference + timeline ice dancer who won olympic gold in 1984 with christopher dean.">
                 <div class="card-top">
                     <h3>Jayne Torvill</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1957-</div>
                 <p class="note">Ice dancer who won Olympic gold in 1984 with Christopher Dean.</p>
-                <p class="hook">Torvill and Dean = ice dancing.</p>
                 <div class="source">Reference + timeline</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="sport christopher dean 1958- core reference + timeline ice dancer who won olympic gold in 1984 with jayne torvill. torvill and dean = ice dancing.">
+            <article class="person-card" data-priority="Core" data-search="sport christopher dean 1958- core reference + timeline ice dancer who won olympic gold in 1984 with jayne torvill.">
                 <div class="card-top">
                     <h3>Christopher Dean</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1958-</div>
                 <p class="note">Ice dancer who won Olympic gold in 1984 with Jayne Torvill.</p>
-                <p class="hook">Torvill and Dean = ice dancing.</p>
                 <div class="source">Reference + timeline</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="sport sir steve redgrave 1962- official reference rower who won gold medals in five consecutive olympic games. redgrave = five olympic rowing golds.">
+            <article class="person-card" data-priority="Official" data-search="sport sir steve redgrave 1962- official reference rower who won gold medals in five consecutive olympic games.">
                 <div class="card-top">
                     <h3>Sir Steve Redgrave</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1962-</div>
                 <p class="note">Rower who won gold medals in five consecutive Olympic Games.</p>
-                <p class="hook">Redgrave = five Olympic rowing golds.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="sport baroness tanni grey-thompson 1969- official reference wheelchair athlete with 16 paralympic medals, six london marathon wins, and many world records. tanni = paralympic wheelchair racing.">
+            <article class="person-card" data-priority="Official" data-search="sport baroness tanni grey-thompson 1969- official reference wheelchair athlete with 16 paralympic medals, six london marathon wins, and many world records.">
                 <div class="card-top">
                     <h3>Baroness Tanni Grey-Thompson</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1969-</div>
                 <p class="note">Wheelchair athlete with 16 Paralympic medals, six London Marathon wins, and many world records.</p>
-                <p class="hook">Tanni = Paralympic wheelchair racing.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="sport dame kelly holmes 1970- official reference runner who won two olympic gold medals in 2004. holmes = two 2004 running golds.">
+            <article class="person-card" data-priority="Official" data-search="sport dame kelly holmes 1970- official reference runner who won two olympic gold medals in 2004.">
                 <div class="card-top">
                     <h3>Dame Kelly Holmes</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1970-</div>
                 <p class="note">Runner who won two Olympic gold medals in 2004.</p>
-                <p class="hook">Holmes = two 2004 running golds.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="sport dame ellen macarthur 1976- official reference yachtswoman who in 2004 became the fastest person to sail single-handed around the world. macarthur = solo sailing speed record.">
+            <article class="person-card" data-priority="Official" data-search="sport dame ellen macarthur 1976- official reference yachtswoman who in 2004 became the fastest person to sail single-handed around the world.">
                 <div class="card-top">
                     <h3>Dame Ellen MacArthur</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1976-</div>
                 <p class="note">Yachtswoman who in 2004 became the fastest person to sail single-handed around the world.</p>
-                <p class="hook">MacArthur = solo sailing speed record.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="sport sir chris hoy 1976- official reference scottish cyclist with multiple olympic gold medals and world championship titles. hoy = olympic cycling.">
+            <article class="person-card" data-priority="Official" data-search="sport sir chris hoy 1976- official reference scottish cyclist with multiple olympic gold medals and world championship titles.">
                 <div class="card-top">
                     <h3>Sir Chris Hoy</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1976-</div>
                 <p class="note">Scottish cyclist with multiple Olympic gold medals and world championship titles.</p>
-                <p class="hook">Hoy = Olympic cycling.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="sport david weir 1979- official reference wheelchair paralympian with six paralympic gold medals and six london marathon wins. weir = wheelchair racing.">
+            <article class="person-card" data-priority="Official" data-search="sport david weir 1979- official reference wheelchair paralympian with six paralympic gold medals and six london marathon wins.">
                 <div class="card-top">
                     <h3>David Weir</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1979-</div>
                 <p class="note">Wheelchair Paralympian with six Paralympic gold medals and six London Marathon wins.</p>
-                <p class="hook">Weir = wheelchair racing.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="sport bradley wiggins 1980- official reference cyclist who became the first briton to win the tour de france in 2012 and also won olympic medals. wiggins = tour de france.">
+            <article class="person-card" data-priority="Official" data-search="sport bradley wiggins 1980- official reference cyclist who became the first briton to win the tour de france in 2012 and also won olympic medals.">
                 <div class="card-top">
                     <h3>Bradley Wiggins</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1980-</div>
                 <p class="note">Cyclist who became the first Briton to win the Tour de France in 2012 and also won Olympic medals.</p>
-                <p class="hook">Wiggins = Tour de France.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="sport mo farah 1983- core reference + transcripts distance runner who won 5,000m and 10,000m gold medals at the 2012 london olympics. mo farah = double 2012 distance gold.">
+            <article class="person-card" data-priority="Core" data-search="sport mo farah 1983- core reference + transcripts distance runner who won 5,000m and 10,000m gold medals at the 2012 london olympics.">
                 <div class="card-top">
                     <h3>Mo Farah</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1983-</div>
                 <p class="note">Distance runner who won 5,000m and 10,000m gold medals at the 2012 London Olympics.</p>
-                <p class="hook">Mo Farah = double 2012 distance gold.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="sport jessica ennis 1986- core reference + transcripts athlete who won the heptathlon gold medal at the 2012 london olympics. ennis = 2012 heptathlon.">
+            <article class="person-card" data-priority="Core" data-search="sport jessica ennis 1986- core reference + transcripts athlete who won the heptathlon gold medal at the 2012 london olympics.">
                 <div class="card-top">
                     <h3>Jessica Ennis</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1986-</div>
                 <p class="note">Athlete who won the heptathlon gold medal at the 2012 London Olympics.</p>
-                <p class="hook">Ennis = 2012 heptathlon.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="sport andy murray 1987- official reference scottish tennis player who won the 2012 us open and olympic medals, becoming the first british man since 1936 to win a grand slam singles title. murray = modern british tennis breakthrough.">
+            <article class="person-card" data-priority="Official" data-search="sport andy murray 1987- official reference scottish tennis player who won the 2012 us open and olympic medals, becoming the first british man since 1936 to win a grand slam singles title.">
                 <div class="card-top">
                     <h3>Andy Murray</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1987-</div>
                 <p class="note">Scottish tennis player who won the 2012 US Open and Olympic medals, becoming the first British man since 1936 to win a Grand Slam singles title.</p>
-                <p class="hook">Murray = modern British tennis breakthrough.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="sport ellie simmonds 1994- official reference paralympic swimmer who won gold medals in 2008 and 2012 and was the youngest member of the 2008 british team. simmonds = paralympic swimming.">
+            <article class="person-card" data-priority="Official" data-search="sport ellie simmonds 1994- official reference paralympic swimmer who won gold medals in 2008 and 2012 and was the youngest member of the 2008 british team.">
                 <div class="card-top">
                     <h3>Ellie Simmonds</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1994-</div>
                 <p class="note">Paralympic swimmer who won gold medals in 2008 and 2012 and was the youngest member of the 2008 British team.</p>
-                <p class="hook">Simmonds = Paralympic swimming.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="sport sir francis chichester 1901-1972 official reference sailor who became the first person to sail single-handed around the world in 1966/67. chichester = solo round-world sailing.">
+            <article class="person-card" data-priority="Official" data-search="sport sir francis chichester 1901-1972 official reference sailor who became the first person to sail single-handed around the world in 1966/67.">
                 <div class="card-top">
                     <h3>Sir Francis Chichester</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1901-1972</div>
                 <p class="note">Sailor who became the first person to sail single-handed around the world in 1966/67.</p>
-                <p class="hook">Chichester = solo round-world sailing.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="sport sir robin knox-johnston 1939- official reference sailor who became the first person to sail single-handed around the world without stopping. knox-johnston = nonstop solo sailing.">
+            <article class="person-card" data-priority="Official" data-search="sport sir robin knox-johnston 1939- official reference sailor who became the first person to sail single-handed around the world without stopping.">
                 <div class="card-top">
                     <h3>Sir Robin Knox-Johnston</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1939-</div>
                 <p class="note">Sailor who became the first person to sail single-handed around the world without stopping.</p>
-                <p class="hook">Knox-Johnston = nonstop solo sailing.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="sport damon hill 1960- core reference + transcripts formula 1 world champion used in video questions alongside lewis hamilton and jenson button. hill = f1.">
+            <article class="person-card" data-priority="Core" data-search="sport damon hill 1960- core reference + transcripts formula 1 world champion used in video questions alongside lewis hamilton and jenson button.">
                 <div class="card-top">
                     <h3>Damon Hill</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1960-</div>
                 <p class="note">Formula 1 world champion used in video questions alongside Lewis Hamilton and Jenson Button.</p>
-                <p class="hook">Hill = F1.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="sport lewis hamilton 1985- core reference + transcripts formula 1 world champion used in the test-style question about british motor racing. hamilton = f1.">
+            <article class="person-card" data-priority="Core" data-search="sport lewis hamilton 1985- core reference + transcripts formula 1 world champion used in the test-style question about british motor racing.">
                 <div class="card-top">
                     <h3>Lewis Hamilton</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1985-</div>
                 <p class="note">Formula 1 world champion used in the test-style question about British motor racing.</p>
-                <p class="hook">Hamilton = F1.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="sport jenson button 1980- core reference + transcripts formula 1 world champion named with damon hill and lewis hamilton; the source text also shows the spelling jensen. button = f1.">
+            <article class="person-card" data-priority="Core" data-search="sport jenson button 1980- core reference + transcripts formula 1 world champion named with damon hill and lewis hamilton; the source text also shows the spelling jensen.">
                 <div class="card-top">
                     <h3>Jenson Button</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1980-</div>
                 <p class="note">Formula 1 world champion named with Damon Hill and Lewis Hamilton; the source text also shows the spelling Jensen.</p>
-                <p class="hook">Button = F1.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
@@ -1239,338 +1158,310 @@
                 </div>
                 <div class="card-grid">
                     
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy charlie chaplin 1889-1977 official reference british actor famous in silent movies for his tramp character and hollywood career. chaplin = silent-film tramp.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy charlie chaplin 1889-1977 official reference british actor famous in silent movies for his tramp character and hollywood career.">
                 <div class="card-top">
                     <h3>Charlie Chaplin</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1889-1977</div>
                 <p class="note">British actor famous in silent movies for his tramp character and Hollywood career.</p>
-                <p class="hook">Chaplin = silent-film tramp.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy sir alexander korda 1893-1956 official reference film director named among the eminent british studio directors of the 1930s. korda = 1930s british film.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy sir alexander korda 1893-1956 official reference film director named among the eminent british studio directors of the 1930s.">
                 <div class="card-top">
                     <h3>Sir Alexander Korda</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1893-1956</div>
                 <p class="note">Film director named among the eminent British studio directors of the 1930s.</p>
-                <p class="hook">Korda = 1930s British film.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="film, tv &amp; comedy sir alfred hitchcock 1899-1980 core reference + transcripts british film director linked with the 39 steps and later hollywood success. hitchcock = film director.">
+            <article class="person-card" data-priority="Core" data-search="film, tv &amp; comedy sir alfred hitchcock 1899-1980 core reference + transcripts british film director linked with the 39 steps and later hollywood success.">
                 <div class="card-top">
                     <h3>Sir Alfred Hitchcock</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1899-1980</div>
                 <p class="note">British film director linked with The 39 Steps and later Hollywood success.</p>
-                <p class="hook">Hitchcock = film director.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy sir david lean 1908-1991 official reference film director of brief encounter and lawrence of arabia, named as a successful british director. lean = epic british cinema.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy sir david lean 1908-1991 official reference film director of brief encounter and lawrence of arabia, named as a successful british director.">
                 <div class="card-top">
                     <h3>Sir David Lean</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1908-1991</div>
                 <p class="note">Film director of Brief Encounter and Lawrence of Arabia, named as a successful British director.</p>
-                <p class="hook">Lean = epic British cinema.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy ridley scott 1937- official reference british film director named for international success in later british cinema. ridley scott = international film director.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy ridley scott 1937- official reference british film director named for international success in later british cinema.">
                 <div class="card-top">
                     <h3>Ridley Scott</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1937-</div>
                 <p class="note">British film director named for international success in later British cinema.</p>
-                <p class="hook">Ridley Scott = international film director.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy nick park 1958- official reference animator who won four oscars, including for wallace and gromit films. nick park = wallace and gromit.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy nick park 1958- official reference animator who won four oscars, including for wallace and gromit films.">
                 <div class="card-top">
                     <h3>Nick Park</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1958-</div>
                 <p class="note">Animator who won four Oscars, including for Wallace and Gromit films.</p>
-                <p class="hook">Nick Park = Wallace and Gromit.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="film, tv &amp; comedy sir laurence olivier 1907-1989 core reference + transcripts actor best known for shakespearean roles; the laurence olivier awards are named after him. olivier = shakespearean actor.">
+            <article class="person-card" data-priority="Core" data-search="film, tv &amp; comedy sir laurence olivier 1907-1989 core reference + transcripts actor best known for shakespearean roles; the laurence olivier awards are named after him.">
                 <div class="card-top">
                     <h3>Sir Laurence Olivier</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1907-1989</div>
                 <p class="note">Actor best known for Shakespearean roles; the Laurence Olivier Awards are named after him.</p>
-                <p class="hook">Olivier = Shakespearean actor.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy david niven 1910-1983 official reference british actor named among the popular film stars of classic british cinema. niven = classic british actor.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy david niven 1910-1983 official reference british actor named among the popular film stars of classic british cinema.">
                 <div class="card-top">
                     <h3>David Niven</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1910-1983</div>
                 <p class="note">British actor named among the popular film stars of classic British cinema.</p>
-                <p class="hook">Niven = classic British actor.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy sir rex harrison 1908-1990 official reference british actor named among notable film stars in the handbook. rex harrison = classic british actor.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy sir rex harrison 1908-1990 official reference british actor named among notable film stars in the handbook.">
                 <div class="card-top">
                     <h3>Sir Rex Harrison</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1908-1990</div>
                 <p class="note">British actor named among notable film stars in the handbook.</p>
-                <p class="hook">Rex Harrison = classic British actor.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy richard burton 1925-1984 official reference welsh actor named among major british film stars. burton = welsh film actor.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy richard burton 1925-1984 official reference welsh actor named among major british film stars.">
                 <div class="card-top">
                     <h3>Richard Burton</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1925-1984</div>
                 <p class="note">Welsh actor named among major British film stars.</p>
-                <p class="hook">Burton = Welsh film actor.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy colin firth 1960- official reference british actor named among recent british oscar winners. firth = oscar-winning actor.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy colin firth 1960- official reference british actor named among recent british oscar winners.">
                 <div class="card-top">
                     <h3>Colin Firth</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1960-</div>
                 <p class="note">British actor named among recent British Oscar winners.</p>
-                <p class="hook">Firth = Oscar-winning actor.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy sir anthony hopkins 1937- official reference welsh actor named among british oscar winners. hopkins = oscar-winning actor.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy sir anthony hopkins 1937- official reference welsh actor named among british oscar winners.">
                 <div class="card-top">
                     <h3>Sir Anthony Hopkins</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1937-</div>
                 <p class="note">Welsh actor named among British Oscar winners.</p>
-                <p class="hook">Hopkins = Oscar-winning actor.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy dame judi dench 1934- official reference british actor named among recent british oscar winners. dench = oscar-winning actor.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy dame judi dench 1934- official reference british actor named among recent british oscar winners.">
                 <div class="card-top">
                     <h3>Dame Judi Dench</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1934-</div>
                 <p class="note">British actor named among recent British Oscar winners.</p>
-                <p class="hook">Dench = Oscar-winning actor.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy kate winslet 1975- official reference british actor named among recent british oscar winners. winslet = oscar-winning actor.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy kate winslet 1975- official reference british actor named among recent british oscar winners.">
                 <div class="card-top">
                     <h3>Kate Winslet</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1975-</div>
                 <p class="note">British actor named among recent British Oscar winners.</p>
-                <p class="hook">Winslet = Oscar-winning actor.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy tilda swinton 1960- official reference british actor named among recent british oscar winners. swinton = oscar-winning actor.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy tilda swinton 1960- official reference british actor named among recent british oscar winners.">
                 <div class="card-top">
                     <h3>Tilda Swinton</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1960-</div>
                 <p class="note">British actor named among recent British Oscar winners.</p>
-                <p class="hook">Swinton = Oscar-winning actor.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy carol reed 1906-1976 official reference director of the third man, listed among famous british films. reed = the third man.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy carol reed 1906-1976 official reference director of the third man, listed among famous british films.">
                 <div class="card-top">
                     <h3>Carol Reed</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1906-1976</div>
                 <p class="note">Director of The Third Man, listed among famous British films.</p>
-                <p class="hook">Reed = The Third Man.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy frank launder 1906-1997 official reference director of the belles of st trinian&#x27;s, listed among famous british films. launder = st trinian&#x27;s.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy frank launder 1906-1997 official reference director of the belles of st trinian&#x27;s, listed among famous british films.">
                 <div class="card-top">
                     <h3>Frank Launder</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1906-1997</div>
                 <p class="note">Director of The Belles of St Trinian&#x27;s, listed among famous British films.</p>
-                <p class="hook">Launder = St Trinian&#x27;s.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy ken russell 1927-2011 official reference director of women in love, listed among famous british films. russell = women in love.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy ken russell 1927-2011 official reference director of women in love, listed among famous british films.">
                 <div class="card-top">
                     <h3>Ken Russell</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1927-2011</div>
                 <p class="note">Director of Women in Love, listed among famous British films.</p>
-                <p class="hook">Russell = Women in Love.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy nicolas roeg 1928-2018 official reference director of don&#x27;t look now, listed among famous british films. roeg = don&#x27;t look now.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy nicolas roeg 1928-2018 official reference director of don&#x27;t look now, listed among famous british films.">
                 <div class="card-top">
                     <h3>Nicolas Roeg</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1928-2018</div>
                 <p class="note">Director of Don&#x27;t Look Now, listed among famous British films.</p>
-                <p class="hook">Roeg = Don&#x27;t Look Now.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy hugh hudson 1936-2023 official reference director of chariots of fire, listed among famous british films. hudson = chariots of fire.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy hugh hudson 1936-2023 official reference director of chariots of fire, listed among famous british films.">
                 <div class="card-top">
                     <h3>Hugh Hudson</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1936-2023</div>
                 <p class="note">Director of Chariots of Fire, listed among famous British films.</p>
-                <p class="hook">Hudson = Chariots of Fire.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy roland joffe 1945- official reference director of the killing fields, listed among famous british films. joffe = the killing fields.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy roland joffe 1945- official reference director of the killing fields, listed among famous british films.">
                 <div class="card-top">
                     <h3>Roland Joffe</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1945-</div>
                 <p class="note">Director of The Killing Fields, listed among famous British films.</p>
-                <p class="hook">Joffe = The Killing Fields.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy mike newell 1942- official reference director of four weddings and a funeral, listed among famous british films. newell = four weddings.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy mike newell 1942- official reference director of four weddings and a funeral, listed among famous british films.">
                 <div class="card-top">
                     <h3>Mike Newell</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1942-</div>
                 <p class="note">Director of Four Weddings and a Funeral, listed among famous British films.</p>
-                <p class="hook">Newell = Four Weddings.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy kevin macdonald 1967- official reference director of touching the void, listed among famous british films. macdonald = touching the void.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy kevin macdonald 1967- official reference director of touching the void, listed among famous british films.">
                 <div class="card-top">
                     <h3>Kevin MacDonald</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1967-</div>
                 <p class="note">Director of Touching the Void, listed among famous British films.</p>
-                <p class="hook">MacDonald = Touching the Void.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy morecambe and wise 1926-1984 / 1925-1999 official reference comedy duo from music hall who became major television stars. morecambe and wise = tv comedy duo.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy morecambe and wise 1926-1984 / 1925-1999 official reference comedy duo from music hall who became major television stars.">
                 <div class="card-top">
                     <h3>Morecambe and Wise</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1926-1984 / 1925-1999</div>
                 <p class="note">Comedy duo from music hall who became major television stars.</p>
-                <p class="hook">Morecambe and Wise = TV comedy duo.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy monty python 1969- official reference comedy group whose flying circus introduced a new type of progressive comedy in 1969. monty python = 1969 progressive comedy.">
+            <article class="person-card" data-priority="Official" data-search="film, tv &amp; comedy monty python 1969- official reference comedy group whose flying circus introduced a new type of progressive comedy in 1969.">
                 <div class="card-top">
                     <h3>Monty Python</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1969-</div>
                 <p class="note">Comedy group whose Flying Circus introduced a new type of progressive comedy in 1969.</p>
-                <p class="hook">Monty Python = 1969 progressive comedy.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Transcript" data-search="film, tv &amp; comedy peter kay 1973- transcript transcripts comedian mentioned only in the scripts as a modern comedy example rather than a core handbook name. peter kay = transcript-only comedy example.">
+            <article class="person-card" data-priority="Transcript" data-search="film, tv &amp; comedy peter kay 1973- transcript transcripts comedian mentioned only in the scripts as a modern comedy example rather than a core handbook name.">
                 <div class="card-top">
                     <h3>Peter Kay</h3>
                     <span class="badge transcript">Transcript</span>
                 </div>
                 <div class="years">1973-</div>
                 <p class="note">Comedian mentioned only in the scripts as a modern comedy example rather than a core handbook name.</p>
-                <p class="hook">Peter Kay = transcript-only comedy example.</p>
                 <div class="source">Transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Transcript" data-search="film, tv &amp; comedy peter jackson 1961- transcript transcripts film director mentioned in transcript context around the lord of the rings film adaptations, not as a core life in the uk person. jackson = transcript-only film context.">
+            <article class="person-card" data-priority="Transcript" data-search="film, tv &amp; comedy peter jackson 1961- transcript transcripts film director mentioned in transcript context around the lord of the rings film adaptations, not as a core life in the uk person.">
                 <div class="card-top">
                     <h3>Peter Jackson</h3>
                     <span class="badge transcript">Transcript</span>
                 </div>
                 <div class="years">1961-</div>
                 <p class="note">Film director mentioned in transcript context around The Lord of the Rings film adaptations, not as a core Life in the UK person.</p>
-                <p class="hook">Jackson = transcript-only film context.</p>
                 <div class="source">Transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Transcript" data-search="film, tv &amp; comedy meryl streep 1949- transcript transcripts actor mentioned only as a transcript example, not as a uk handbook study name. streep = transcript-only non-core.">
+            <article class="person-card" data-priority="Transcript" data-search="film, tv &amp; comedy meryl streep 1949- transcript transcripts actor mentioned only as a transcript example, not as a uk handbook study name.">
                 <div class="card-top">
                     <h3>Meryl Streep</h3>
                     <span class="badge transcript">Transcript</span>
                 </div>
                 <div class="years">1949-</div>
                 <p class="note">Actor mentioned only as a transcript example, not as a UK handbook study name.</p>
-                <p class="hook">Streep = transcript-only non-core.</p>
                 <div class="source">Transcripts</div>
             </article>
             
@@ -1584,134 +1475,123 @@
                 </div>
                 <div class="card-grid">
                     
-            <article class="person-card" data-priority="Official" data-search="music &amp; theatre gustav holst 1874-1934 official reference composer of the planets, with jupiter adapted as the tune for i vow to thee my country. holst = the planets.">
+            <article class="person-card" data-priority="Official" data-search="music &amp; theatre gustav holst 1874-1934 official reference composer of the planets, with jupiter adapted as the tune for i vow to thee my country.">
                 <div class="card-top">
                     <h3>Gustav Holst</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1874-1934</div>
                 <p class="note">Composer of The Planets, with Jupiter adapted as the tune for I Vow to Thee My Country.</p>
-                <p class="hook">Holst = The Planets.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="music &amp; theatre sir edward elgar 1857-1934 official reference composer of the pomp and circumstance marches, including land of hope and glory at the last night of the proms. elgar = land of hope and glory.">
+            <article class="person-card" data-priority="Official" data-search="music &amp; theatre sir edward elgar 1857-1934 official reference composer of the pomp and circumstance marches, including land of hope and glory at the last night of the proms.">
                 <div class="card-top">
                     <h3>Sir Edward Elgar</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1857-1934</div>
                 <p class="note">Composer of the Pomp and Circumstance Marches, including Land of Hope and Glory at the Last Night of the Proms.</p>
-                <p class="hook">Elgar = Land of Hope and Glory.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="music &amp; theatre ralph vaughan williams 1872-1958 official reference composer of orchestral and choral music strongly influenced by traditional english folk music. vaughan williams = folk-influenced classical music.">
+            <article class="person-card" data-priority="Official" data-search="music &amp; theatre ralph vaughan williams 1872-1958 official reference composer of orchestral and choral music strongly influenced by traditional english folk music.">
                 <div class="card-top">
                     <h3>Ralph Vaughan Williams</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1872-1958</div>
                 <p class="note">Composer of orchestral and choral music strongly influenced by traditional English folk music.</p>
-                <p class="hook">Vaughan Williams = folk-influenced classical music.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="music &amp; theatre sir william walton 1902-1983 official reference composer of film scores, opera, coronation marches, facade, and belshazzar&#x27;s feast. walton = coronation marches and film scores.">
+            <article class="person-card" data-priority="Official" data-search="music &amp; theatre sir william walton 1902-1983 official reference composer of film scores, opera, coronation marches, facade, and belshazzar&#x27;s feast.">
                 <div class="card-top">
                     <h3>Sir William Walton</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1902-1983</div>
                 <p class="note">Composer of film scores, opera, coronation marches, Facade, and Belshazzar&#x27;s Feast.</p>
-                <p class="hook">Walton = coronation marches and film scores.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="music &amp; theatre benjamin britten 1913-1976 official reference composer known for operas such as peter grimes and billy budd and for founding the aldeburgh festival. britten = opera and aldeburgh.">
+            <article class="person-card" data-priority="Official" data-search="music &amp; theatre benjamin britten 1913-1976 official reference composer known for operas such as peter grimes and billy budd and for founding the aldeburgh festival.">
                 <div class="card-top">
                     <h3>Benjamin Britten</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1913-1976</div>
                 <p class="note">Composer known for operas such as Peter Grimes and Billy Budd and for founding the Aldeburgh Festival.</p>
-                <p class="hook">Britten = opera and Aldeburgh.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="music &amp; theatre the beatles 1960s core reference + timeline pop group named as one of the major cultural influences of the swinging sixties and british popular music. beatles = 1960s pop.">
+            <article class="person-card" data-priority="Core" data-search="music &amp; theatre the beatles 1960s core reference + timeline pop group named as one of the major cultural influences of the swinging sixties and british popular music.">
                 <div class="card-top">
                     <h3>The Beatles</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1960s</div>
                 <p class="note">Pop group named as one of the major cultural influences of the Swinging Sixties and British popular music.</p>
-                <p class="hook">Beatles = 1960s pop.</p>
                 <div class="source">Reference + timeline</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="music &amp; theatre the rolling stones 1960s core reference + timeline pop group named with the beatles as a major british music influence from the swinging sixties. rolling stones = 1960s pop.">
+            <article class="person-card" data-priority="Core" data-search="music &amp; theatre the rolling stones 1960s core reference + timeline pop group named with the beatles as a major british music influence from the swinging sixties.">
                 <div class="card-top">
                     <h3>The Rolling Stones</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1960s</div>
                 <p class="note">Pop group named with The Beatles as a major British music influence from the Swinging Sixties.</p>
-                <p class="hook">Rolling Stones = 1960s pop.</p>
                 <div class="source">Reference + timeline</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="music &amp; theatre dame agatha christie 1890-1976 core reference writer of the mousetrap, the long-running west end murder-mystery play, and globally known detective stories. christie = the mousetrap and detective stories.">
+            <article class="person-card" data-priority="Core" data-search="music &amp; theatre dame agatha christie 1890-1976 core reference writer of the mousetrap, the long-running west end murder-mystery play, and globally known detective stories.">
                 <div class="card-top">
                     <h3>Dame Agatha Christie</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1890-1976</div>
                 <p class="note">Writer of The Mousetrap, the long-running West End murder-mystery play, and globally known detective stories.</p>
-                <p class="hook">Christie = The Mousetrap and detective stories.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Edge" data-search="music &amp; theatre w. s. gilbert and arthur sullivan 1836-1911 / 1842-1900 edge reference comic-opera partnership behind hms pinafore, the pirates of penzance, and the mikado, still performed in the uk. gilbert and sullivan = comic operas.">
+            <article class="person-card" data-priority="Edge" data-search="music &amp; theatre w. s. gilbert and arthur sullivan 1836-1911 / 1842-1900 edge reference comic-opera partnership behind hms pinafore, the pirates of penzance, and the mikado, still performed in the uk.">
                 <div class="card-top">
                     <h3>W. S. Gilbert and Arthur Sullivan</h3>
                     <span class="badge edge">Edge</span>
                 </div>
                 <div class="years">1836-1911 / 1842-1900</div>
                 <p class="note">Comic-opera partnership behind HMS Pinafore, The Pirates of Penzance, and The Mikado, still performed in the UK.</p>
-                <p class="hook">Gilbert and Sullivan = comic operas.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="music &amp; theatre andrew lloyd webber 1948- official reference composer of major musical-theatre shows including cats and the phantom of the opera. lloyd webber = modern musicals.">
+            <article class="person-card" data-priority="Official" data-search="music &amp; theatre andrew lloyd webber 1948- official reference composer of major musical-theatre shows including cats and the phantom of the opera.">
                 <div class="card-top">
                     <h3>Andrew Lloyd Webber</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1948-</div>
                 <p class="note">Composer of major musical-theatre shows including Cats and The Phantom of the Opera.</p>
-                <p class="hook">Lloyd Webber = modern musicals.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="music &amp; theatre tim rice 1944- official reference lyricist who collaborated with andrew lloyd webber on jesus christ superstar and evita. rice = lloyd webber collaborator.">
+            <article class="person-card" data-priority="Official" data-search="music &amp; theatre tim rice 1944- official reference lyricist who collaborated with andrew lloyd webber on jesus christ superstar and evita.">
                 <div class="card-top">
                     <h3>Tim Rice</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1944-</div>
                 <p class="note">Lyricist who collaborated with Andrew Lloyd Webber on Jesus Christ Superstar and Evita.</p>
-                <p class="hook">Rice = Lloyd Webber collaborator.</p>
                 <div class="source">Reference</div>
             </article>
             
@@ -1725,314 +1605,288 @@
                 </div>
                 <div class="card-grid">
                     
-            <article class="person-card" data-priority="Core" data-search="literature &amp; poetry rudyard kipling 1865-1936 core reference + transcripts india-born author and poet who won the nobel prize in literature in 1907 and wrote the jungle book and if. kipling = nobel, jungle book, if.">
+            <article class="person-card" data-priority="Core" data-search="literature &amp; poetry rudyard kipling 1865-1936 core reference + transcripts india-born author and poet who won the nobel prize in literature in 1907 and wrote the jungle book and if.">
                 <div class="card-top">
                     <h3>Rudyard Kipling</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1865-1936</div>
                 <p class="note">India-born author and poet who won the Nobel Prize in Literature in 1907 and wrote The Jungle Book and If.</p>
-                <p class="hook">Kipling = Nobel, Jungle Book, If.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="literature &amp; poetry dylan thomas 1914-1953 core reference + transcripts welsh poet and writer known for under milk wood and do not go gentle into that good night. dylan thomas = welsh poet.">
+            <article class="person-card" data-priority="Core" data-search="literature &amp; poetry dylan thomas 1914-1953 core reference + transcripts welsh poet and writer known for under milk wood and do not go gentle into that good night.">
                 <div class="card-top">
                     <h3>Dylan Thomas</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1914-1953</div>
                 <p class="note">Welsh poet and writer known for Under Milk Wood and Do Not Go Gentle into That Good Night.</p>
-                <p class="hook">Dylan Thomas = Welsh poet.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="literature &amp; poetry roald dahl 1916-1990 core reference + key facts welsh-born author best known for children&#x27;s books such as charlie and the chocolate factory and george&#x27;s marvellous medicine. dahl = children&#x27;s books.">
+            <article class="person-card" data-priority="Core" data-search="literature &amp; poetry roald dahl 1916-1990 core reference + key facts welsh-born author best known for children&#x27;s books such as charlie and the chocolate factory and george&#x27;s marvellous medicine.">
                 <div class="card-top">
                     <h3>Roald Dahl</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1916-1990</div>
                 <p class="note">Welsh-born author best known for children&#x27;s books such as Charlie and the Chocolate Factory and George&#x27;s Marvellous Medicine.</p>
-                <p class="hook">Dahl = children&#x27;s books.</p>
                 <div class="source">Reference + key facts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry sir william golding 1911-1993 official reference novelist named as one of the british winners of the nobel prize in literature. golding = nobel novelist.">
+            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry sir william golding 1911-1993 official reference novelist named as one of the british winners of the nobel prize in literature.">
                 <div class="card-top">
                     <h3>Sir William Golding</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1911-1993</div>
                 <p class="note">Novelist named as one of the British winners of the Nobel Prize in Literature.</p>
-                <p class="hook">Golding = Nobel novelist.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry seamus heaney 1939-2013 official reference poet named as one of the british or uk-linked nobel prize in literature winners in the handbook. heaney = nobel poet.">
+            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry seamus heaney 1939-2013 official reference poet named as one of the british or uk-linked nobel prize in literature winners in the handbook.">
                 <div class="card-top">
                     <h3>Seamus Heaney</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1939-2013</div>
                 <p class="note">Poet named as one of the British or UK-linked Nobel Prize in Literature winners in the handbook.</p>
-                <p class="hook">Heaney = Nobel poet.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry harold pinter 1930-2008 official reference playwright named as a british winner of the nobel prize in literature. pinter = nobel playwright.">
+            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry harold pinter 1930-2008 official reference playwright named as a british winner of the nobel prize in literature.">
                 <div class="card-top">
                     <h3>Harold Pinter</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1930-2008</div>
                 <p class="note">Playwright named as a British winner of the Nobel Prize in Literature.</p>
-                <p class="hook">Pinter = Nobel playwright.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry ian fleming 1908-1964 official reference author whose books introduced the james bond character. fleming = james bond.">
+            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry ian fleming 1908-1964 official reference author whose books introduced the james bond character.">
                 <div class="card-top">
                     <h3>Ian Fleming</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1908-1964</div>
                 <p class="note">Author whose books introduced the James Bond character.</p>
-                <p class="hook">Fleming = James Bond.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="literature &amp; poetry j. r. r. tolkien 1892-1973 core reference author of the lord of the rings, voted the country&#x27;s best-loved novel in 2003. tolkien = lord of the rings.">
+            <article class="person-card" data-priority="Core" data-search="literature &amp; poetry j. r. r. tolkien 1892-1973 core reference author of the lord of the rings, voted the country&#x27;s best-loved novel in 2003.">
                 <div class="card-top">
                     <h3>J. R. R. Tolkien</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1892-1973</div>
                 <p class="note">Author of The Lord of the Rings, voted the country&#x27;s best-loved novel in 2003.</p>
-                <p class="hook">Tolkien = Lord of the Rings.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry ian mcewan 1948- official reference booker prize-winning novelist named among past winners in the handbook. mcewan = booker winner.">
+            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry ian mcewan 1948- official reference booker prize-winning novelist named among past winners in the handbook.">
                 <div class="card-top">
                     <h3>Ian McEwan</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1948-</div>
                 <p class="note">Booker Prize-winning novelist named among past winners in the handbook.</p>
-                <p class="hook">McEwan = Booker winner.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry hilary mantel 1952-2022 official reference booker prize-winning novelist named among past winners in the handbook. mantel = booker winner.">
+            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry hilary mantel 1952-2022 official reference booker prize-winning novelist named among past winners in the handbook.">
                 <div class="card-top">
                     <h3>Hilary Mantel</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1952-2022</div>
                 <p class="note">Booker Prize-winning novelist named among past winners in the handbook.</p>
-                <p class="hook">Mantel = Booker winner.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry julian barnes 1946- official reference booker prize-winning novelist named among past winners in the handbook. barnes = booker winner.">
+            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry julian barnes 1946- official reference booker prize-winning novelist named among past winners in the handbook.">
                 <div class="card-top">
                     <h3>Julian Barnes</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1946-</div>
                 <p class="note">Booker Prize-winning novelist named among past winners in the handbook.</p>
-                <p class="hook">Barnes = Booker winner.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Edge" data-search="literature &amp; poetry thomas hardy 1840-1928 edge reference author and poet whose novels such as far from the madding crowd and jude the obscure focus on rural society. hardy = rural novels.">
+            <article class="person-card" data-priority="Edge" data-search="literature &amp; poetry thomas hardy 1840-1928 edge reference author and poet whose novels such as far from the madding crowd and jude the obscure focus on rural society.">
                 <div class="card-top">
                     <h3>Thomas Hardy</h3>
                     <span class="badge edge">Edge</span>
                 </div>
                 <div class="years">1840-1928</div>
                 <p class="note">Author and poet whose novels such as Far from the Madding Crowd and Jude the Obscure focus on rural society.</p>
-                <p class="hook">Hardy = rural novels.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="literature &amp; poetry sir arthur conan doyle 1859-1930 core reference + key facts scottish doctor and writer best known for creating sherlock holmes. conan doyle = sherlock holmes.">
+            <article class="person-card" data-priority="Core" data-search="literature &amp; poetry sir arthur conan doyle 1859-1930 core reference + key facts scottish doctor and writer best known for creating sherlock holmes.">
                 <div class="card-top">
                     <h3>Sir Arthur Conan Doyle</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1859-1930</div>
                 <p class="note">Scottish doctor and writer best known for creating Sherlock Holmes.</p>
-                <p class="hook">Conan Doyle = Sherlock Holmes.</p>
                 <div class="source">Reference + key facts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry evelyn waugh 1903-1966 official reference satirical novelist best known in the handbook for brideshead revisited. waugh = brideshead revisited.">
+            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry evelyn waugh 1903-1966 official reference satirical novelist best known in the handbook for brideshead revisited.">
                 <div class="card-top">
                     <h3>Evelyn Waugh</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1903-1966</div>
                 <p class="note">Satirical novelist best known in the handbook for Brideshead Revisited.</p>
-                <p class="hook">Waugh = Brideshead Revisited.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry sir kingsley amis 1922-1995 official reference english novelist and poet whose best-known novel is lucky jim. amis = lucky jim.">
+            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry sir kingsley amis 1922-1995 official reference english novelist and poet whose best-known novel is lucky jim.">
                 <div class="card-top">
                     <h3>Sir Kingsley Amis</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1922-1995</div>
                 <p class="note">English novelist and poet whose best-known novel is Lucky Jim.</p>
-                <p class="hook">Amis = Lucky Jim.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry graham greene 1904-1991 official reference novelist known for works such as brighton rock, the heart of the matter, and the honorary consul. greene = brighton rock.">
+            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry graham greene 1904-1991 official reference novelist known for works such as brighton rock, the heart of the matter, and the honorary consul.">
                 <div class="card-top">
                     <h3>Graham Greene</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1904-1991</div>
                 <p class="note">Novelist known for works such as Brighton Rock, The Heart of the Matter, and The Honorary Consul.</p>
-                <p class="hook">Greene = Brighton Rock.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry j. k. rowling 1965- official reference author of the harry potter series, which achieved huge international success. rowling = harry potter.">
+            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry j. k. rowling 1965- official reference author of the harry potter series, which achieved huge international success.">
                 <div class="card-top">
                     <h3>J. K. Rowling</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1965-</div>
                 <p class="note">Author of the Harry Potter series, which achieved huge international success.</p>
-                <p class="hook">Rowling = Harry Potter.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry wilfred owen 1893-1918 official reference first world war poet named as an example of writers inspired by war experience. owen = wwi poetry.">
+            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry wilfred owen 1893-1918 official reference first world war poet named as an example of writers inspired by war experience.">
                 <div class="card-top">
                     <h3>Wilfred Owen</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1893-1918</div>
                 <p class="note">First World War poet named as an example of writers inspired by war experience.</p>
-                <p class="hook">Owen = WWI poetry.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry siegfried sassoon 1886-1967 official reference first world war poet named alongside wilfred owen. sassoon = wwi poetry.">
+            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry siegfried sassoon 1886-1967 official reference first world war poet named alongside wilfred owen.">
                 <div class="card-top">
                     <h3>Siegfried Sassoon</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1886-1967</div>
                 <p class="note">First World War poet named alongside Wilfred Owen.</p>
-                <p class="hook">Sassoon = WWI poetry.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry sir walter de la mare 1873-1956 official reference modern poet listed among more recent popular poets in the handbook. de la mare = recent poet list.">
+            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry sir walter de la mare 1873-1956 official reference modern poet listed among more recent popular poets in the handbook.">
                 <div class="card-top">
                     <h3>Sir Walter de la Mare</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1873-1956</div>
                 <p class="note">Modern poet listed among more recent popular poets in the handbook.</p>
-                <p class="hook">De la Mare = recent poet list.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry john masefield 1878-1967 official reference modern poet listed among more recent popular poets in the handbook. masefield = recent poet list.">
+            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry john masefield 1878-1967 official reference modern poet listed among more recent popular poets in the handbook.">
                 <div class="card-top">
                     <h3>John Masefield</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1878-1967</div>
                 <p class="note">Modern poet listed among more recent popular poets in the handbook.</p>
-                <p class="hook">Masefield = recent poet list.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry sir john betjeman 1906-1984 official reference poet listed among more recent popular poets in the handbook. betjeman = recent poet list.">
+            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry sir john betjeman 1906-1984 official reference poet listed among more recent popular poets in the handbook.">
                 <div class="card-top">
                     <h3>Sir John Betjeman</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1906-1984</div>
                 <p class="note">Poet listed among more recent popular poets in the handbook.</p>
-                <p class="hook">Betjeman = recent poet list.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry ted hughes 1930-1998 official reference poet listed among more recent popular poets in the handbook. hughes = recent poet list.">
+            <article class="person-card" data-priority="Official" data-search="literature &amp; poetry ted hughes 1930-1998 official reference poet listed among more recent popular poets in the handbook.">
                 <div class="card-top">
                     <h3>Ted Hughes</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1930-1998</div>
                 <p class="note">Poet listed among more recent popular poets in the handbook.</p>
-                <p class="hook">Hughes = recent poet list.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Transcript" data-search="literature &amp; poetry chinua achebe 1930-2013 transcript transcripts nigerian author mentioned only as a comparison for famous literature, with things fall apart named in the script. achebe = transcript-only comparison.">
+            <article class="person-card" data-priority="Transcript" data-search="literature &amp; poetry chinua achebe 1930-2013 transcript transcripts nigerian author mentioned only as a comparison for famous literature, with things fall apart named in the script.">
                 <div class="card-top">
                     <h3>Chinua Achebe</h3>
                     <span class="badge transcript">Transcript</span>
                 </div>
                 <div class="years">1930-2013</div>
                 <p class="note">Nigerian author mentioned only as a comparison for famous literature, with Things Fall Apart named in the script.</p>
-                <p class="hook">Achebe = transcript-only comparison.</p>
                 <div class="source">Transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Transcript" data-search="literature &amp; poetry frantz fanon 1925-1961 transcript transcripts writer and thinker mentioned only as a comparison in the literature discussion, not as a life in the uk handbook answer. fanon = transcript-only comparison.">
+            <article class="person-card" data-priority="Transcript" data-search="literature &amp; poetry frantz fanon 1925-1961 transcript transcripts writer and thinker mentioned only as a comparison in the literature discussion, not as a life in the uk handbook answer.">
                 <div class="card-top">
                     <h3>Frantz Fanon</h3>
                     <span class="badge transcript">Transcript</span>
                 </div>
                 <div class="years">1925-1961</div>
                 <p class="note">Writer and thinker mentioned only as a comparison in the literature discussion, not as a Life in the UK handbook answer.</p>
-                <p class="hook">Fanon = transcript-only comparison.</p>
                 <div class="source">Transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Transcript" data-search="literature &amp; poetry louise bennett 1919-2006 transcript transcripts jamaican poet and performer mentioned only as a comparison in the literature discussion. bennett = transcript-only comparison.">
+            <article class="person-card" data-priority="Transcript" data-search="literature &amp; poetry louise bennett 1919-2006 transcript transcripts jamaican poet and performer mentioned only as a comparison in the literature discussion.">
                 <div class="card-top">
                     <h3>Louise Bennett</h3>
                     <span class="badge transcript">Transcript</span>
                 </div>
                 <div class="years">1919-2006</div>
                 <p class="note">Jamaican poet and performer mentioned only as a comparison in the literature discussion.</p>
-                <p class="hook">Bennett = transcript-only comparison.</p>
                 <div class="source">Transcripts</div>
             </article>
             
@@ -2046,218 +1900,200 @@
                 </div>
                 <div class="card-grid">
                     
-            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design sir john lavery 1856-1941 official reference northern irish portrait painter whose work included paintings of the royal family. lavery = northern irish portraits.">
+            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design sir john lavery 1856-1941 official reference northern irish portrait painter whose work included paintings of the royal family.">
                 <div class="card-top">
                     <h3>Sir John Lavery</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1856-1941</div>
                 <p class="note">Northern Irish portrait painter whose work included paintings of the Royal Family.</p>
-                <p class="hook">Lavery = Northern Irish portraits.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design henry moore 1898-1986 official reference english sculptor and artist best known for large bronze abstract sculptures. moore = bronze abstract sculpture.">
+            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design henry moore 1898-1986 official reference english sculptor and artist best known for large bronze abstract sculptures.">
                 <div class="card-top">
                     <h3>Henry Moore</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1898-1986</div>
                 <p class="note">English sculptor and artist best known for large bronze abstract sculptures.</p>
-                <p class="hook">Moore = bronze abstract sculpture.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design john petts 1914-1991 official reference welsh artist best known for engravings and stained glass. petts = welsh stained glass.">
+            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design john petts 1914-1991 official reference welsh artist best known for engravings and stained glass.">
                 <div class="card-top">
                     <h3>John Petts</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1914-1991</div>
                 <p class="note">Welsh artist best known for engravings and stained glass.</p>
-                <p class="hook">Petts = Welsh stained glass.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design lucian freud 1922-2011 official reference german-born british artist best known for portraits. freud = portraits.">
+            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design lucian freud 1922-2011 official reference german-born british artist best known for portraits.">
                 <div class="card-top">
                     <h3>Lucian Freud</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1922-2011</div>
                 <p class="note">German-born British artist best known for portraits.</p>
-                <p class="hook">Freud = portraits.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design david hockney 1937- official reference artist linked with the 1960s pop art movement and continuing contemporary influence. hockney = pop art.">
+            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design david hockney 1937- official reference artist linked with the 1960s pop art movement and continuing contemporary influence.">
                 <div class="card-top">
                     <h3>David Hockney</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1937-</div>
                 <p class="note">Artist linked with the 1960s pop art movement and continuing contemporary influence.</p>
-                <p class="hook">Hockney = pop art.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design damien hirst 1965- official reference contemporary artist named as a previous turner prize winner. hirst = turner prize.">
+            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design damien hirst 1965- official reference contemporary artist named as a previous turner prize winner.">
                 <div class="card-top">
                     <h3>Damien Hirst</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1965-</div>
                 <p class="note">Contemporary artist named as a previous Turner Prize winner.</p>
-                <p class="hook">Hirst = Turner Prize.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design richard wright 1960- official reference contemporary artist named as a previous turner prize winner. wright = turner prize.">
+            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design richard wright 1960- official reference contemporary artist named as a previous turner prize winner.">
                 <div class="card-top">
                     <h3>Richard Wright</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1960-</div>
                 <p class="note">Contemporary artist named as a previous Turner Prize winner.</p>
-                <p class="hook">Wright = Turner Prize.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design sir edwin lutyens 1869-1944 official reference architect who designed new delhi&#x27;s government seat and many war memorials, including the cenotaph in whitehall. lutyens = new delhi and cenotaph.">
+            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design sir edwin lutyens 1869-1944 official reference architect who designed new delhi&#x27;s government seat and many war memorials, including the cenotaph in whitehall.">
                 <div class="card-top">
                     <h3>Sir Edwin Lutyens</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1869-1944</div>
                 <p class="note">Architect who designed New Delhi&#x27;s government seat and many war memorials, including the Cenotaph in Whitehall.</p>
-                <p class="hook">Lutyens = New Delhi and Cenotaph.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design sir norman foster 1935- official reference modern british architect named for major projects in the uk and internationally. foster = modern architecture.">
+            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design sir norman foster 1935- official reference modern british architect named for major projects in the uk and internationally.">
                 <div class="card-top">
                     <h3>Sir Norman Foster</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1935-</div>
                 <p class="note">Modern British architect named for major projects in the UK and internationally.</p>
-                <p class="hook">Foster = modern architecture.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design lord richard rogers 1933-2021 official reference modern british architect named for major projects in the uk and internationally. rogers = modern architecture.">
+            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design lord richard rogers 1933-2021 official reference modern british architect named for major projects in the uk and internationally.">
                 <div class="card-top">
                     <h3>Lord Richard Rogers</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1933-2021</div>
                 <p class="note">Modern British architect named for major projects in the UK and internationally.</p>
-                <p class="hook">Rogers = modern architecture.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design dame zaha hadid 1950-2016 official reference modern british architect named for major international and uk projects. hadid = modern architecture.">
+            <article class="person-card" data-priority="Official" data-search="art, architecture, fashion &amp; design dame zaha hadid 1950-2016 official reference modern british architect named for major international and uk projects.">
                 <div class="card-top">
                     <h3>Dame Zaha Hadid</h3>
                     <span class="badge official">Official</span>
                 </div>
                 <div class="years">1950-2016</div>
                 <p class="note">Modern British architect named for major international and UK projects.</p>
-                <p class="hook">Hadid = modern architecture.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Edge" data-search="art, architecture, fashion &amp; design gertrude jekyll 1843-1932 edge reference garden designer who often worked with edwin lutyens on colourful gardens. jekyll = garden design.">
+            <article class="person-card" data-priority="Edge" data-search="art, architecture, fashion &amp; design gertrude jekyll 1843-1932 edge reference garden designer who often worked with edwin lutyens on colourful gardens.">
                 <div class="card-top">
                     <h3>Gertrude Jekyll</h3>
                     <span class="badge edge">Edge</span>
                 </div>
                 <div class="years">1843-1932</div>
                 <p class="note">Garden designer who often worked with Edwin Lutyens on colourful gardens.</p>
-                <p class="hook">Jekyll = garden design.</p>
                 <div class="source">Reference</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="art, architecture, fashion &amp; design clarice cliff 1899-1972 core reference + transcripts designer known for art deco ceramics. cliff = ceramics.">
+            <article class="person-card" data-priority="Core" data-search="art, architecture, fashion &amp; design clarice cliff 1899-1972 core reference + transcripts designer known for art deco ceramics.">
                 <div class="card-top">
                     <h3>Clarice Cliff</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1899-1972</div>
                 <p class="note">Designer known for Art Deco ceramics.</p>
-                <p class="hook">Cliff = ceramics.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="art, architecture, fashion &amp; design sir terence conran 1931-2020 core reference + transcripts 20th-century interior designer named in the design section. conran = interiors.">
+            <article class="person-card" data-priority="Core" data-search="art, architecture, fashion &amp; design sir terence conran 1931-2020 core reference + transcripts 20th-century interior designer named in the design section.">
                 <div class="card-top">
                     <h3>Sir Terence Conran</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1931-2020</div>
                 <p class="note">20th-century interior designer named in the design section.</p>
-                <p class="hook">Conran = interiors.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="art, architecture, fashion &amp; design mary quant 1930-2023 core reference + transcripts fashion designer named among leading british designers of recent years. quant = fashion.">
+            <article class="person-card" data-priority="Core" data-search="art, architecture, fashion &amp; design mary quant 1930-2023 core reference + transcripts fashion designer named among leading british designers of recent years.">
                 <div class="card-top">
                     <h3>Mary Quant</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1930-2023</div>
                 <p class="note">Fashion designer named among leading British designers of recent years.</p>
-                <p class="hook">Quant = fashion.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="art, architecture, fashion &amp; design alexander mcqueen 1969-2010 core reference + transcripts fashion designer named among leading british designers of recent years. mcqueen = fashion.">
+            <article class="person-card" data-priority="Core" data-search="art, architecture, fashion &amp; design alexander mcqueen 1969-2010 core reference + transcripts fashion designer named among leading british designers of recent years.">
                 <div class="card-top">
                     <h3>Alexander McQueen</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1969-2010</div>
                 <p class="note">Fashion designer named among leading British designers of recent years.</p>
-                <p class="hook">McQueen = fashion.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Core" data-search="art, architecture, fashion &amp; design vivienne westwood 1941-2022 core reference + transcripts fashion designer named among leading british designers of recent years. westwood = fashion.">
+            <article class="person-card" data-priority="Core" data-search="art, architecture, fashion &amp; design vivienne westwood 1941-2022 core reference + transcripts fashion designer named among leading british designers of recent years.">
                 <div class="card-top">
                     <h3>Vivienne Westwood</h3>
                     <span class="badge core">Core</span>
                 </div>
                 <div class="years">1941-2022</div>
                 <p class="note">Fashion designer named among leading British designers of recent years.</p>
-                <p class="hook">Westwood = fashion.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Transcript" data-search="art, architecture, fashion &amp; design twiggy 1949- transcript transcripts model and fashion figure mentioned in the scripts as a swinging sixties/fashion reference, not a core handbook answer. twiggy = transcript-only 1960s fashion.">
+            <article class="person-card" data-priority="Transcript" data-search="art, architecture, fashion &amp; design twiggy 1949- transcript transcripts model and fashion figure mentioned in the scripts as a swinging sixties/fashion reference, not a core handbook answer.">
                 <div class="card-top">
                     <h3>Twiggy</h3>
                     <span class="badge transcript">Transcript</span>
                 </div>
                 <div class="years">1949-</div>
                 <p class="note">Model and fashion figure mentioned in the scripts as a Swinging Sixties/fashion reference, not a core handbook answer.</p>
-                <p class="hook">Twiggy = transcript-only 1960s fashion.</p>
                 <div class="source">Transcripts</div>
             </article>
             
@@ -2271,86 +2107,79 @@
                 </div>
                 <div class="card-grid">
                     
-            <article class="person-card" data-priority="Edge" data-search="older anchors still used in questions florence nightingale 1820-1910 edge reference + transcripts founder of modern nursing; older than the main scope but still appears in the source and video questions. nightingale = modern nursing.">
+            <article class="person-card" data-priority="Edge" data-search="older anchors still used in questions florence nightingale 1820-1910 edge reference + transcripts founder of modern nursing; older than the main scope but still appears in the source and video questions.">
                 <div class="card-top">
                     <h3>Florence Nightingale</h3>
                     <span class="badge edge">Edge</span>
                 </div>
                 <div class="years">1820-1910</div>
                 <p class="note">Founder of modern nursing; older than the main scope but still appears in the source and video questions.</p>
-                <p class="hook">Nightingale = modern nursing.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Older" data-search="older anchors still used in questions richard arkwright 1732-1792 older reference + transcripts industrial revolution factory owner linked in the videos with the carding machine question. arkwright = carding machine/factory.">
+            <article class="person-card" data-priority="Older" data-search="older anchors still used in questions richard arkwright 1732-1792 older reference + transcripts industrial revolution factory owner linked in the videos with the carding machine question.">
                 <div class="card-top">
                     <h3>Richard Arkwright</h3>
                     <span class="badge older">Older</span>
                 </div>
                 <div class="years">1732-1792</div>
                 <p class="note">Industrial Revolution factory owner linked in the videos with the carding machine question.</p>
-                <p class="hook">Arkwright = carding machine/factory.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Older" data-search="older anchors still used in questions sake dean mahomed 1759-1851 older reference key facts + transcripts opened britain&#x27;s first curry house and introduced shampooing/head massage; older than the 1900 scope but heavily used in transcript questions. mahomed = curry house plus shampoo.">
+            <article class="person-card" data-priority="Older" data-search="older anchors still used in questions sake dean mahomed 1759-1851 older reference key facts + transcripts opened britain&#x27;s first curry house and introduced shampooing/head massage; older than the 1900 scope but heavily used in transcript questions.">
                 <div class="card-top">
                     <h3>Sake Dean Mahomed</h3>
                     <span class="badge older">Older</span>
                 </div>
                 <div class="years">1759-1851</div>
                 <p class="note">Opened Britain&#x27;s first curry house and introduced shampooing/head massage; older than the 1900 scope but heavily used in transcript questions.</p>
-                <p class="hook">Mahomed = curry house plus shampoo.</p>
                 <div class="source">Reference key facts + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Older" data-search="older anchors still used in questions isambard kingdom brunel 1806-1859 older reference + transcripts engineer associated with bridges, tunnels, railways, and ships; older than the 1900 scope but a recurring source name. brunel = engineering.">
+            <article class="person-card" data-priority="Older" data-search="older anchors still used in questions isambard kingdom brunel 1806-1859 older reference + transcripts engineer associated with bridges, tunnels, railways, and ships; older than the 1900 scope but a recurring source name.">
                 <div class="card-top">
                     <h3>Isambard Kingdom Brunel</h3>
                     <span class="badge older">Older</span>
                 </div>
                 <div class="years">1806-1859</div>
                 <p class="note">Engineer associated with bridges, tunnels, railways, and ships; older than the 1900 scope but a recurring source name.</p>
-                <p class="hook">Brunel = engineering.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Older" data-search="older anchors still used in questions robert burns 1759-1796 older reference + transcripts scottish poet associated with auld lang syne; older than the 1900 scope but common in the videos. burns = scottish poet.">
+            <article class="person-card" data-priority="Older" data-search="older anchors still used in questions robert burns 1759-1796 older reference + transcripts scottish poet associated with auld lang syne; older than the 1900 scope but common in the videos.">
                 <div class="card-top">
                     <h3>Robert Burns</h3>
                     <span class="badge older">Older</span>
                 </div>
                 <div class="years">1759-1796</div>
                 <p class="note">Scottish poet associated with Auld Lang Syne; older than the 1900 scope but common in the videos.</p>
-                <p class="hook">Burns = Scottish poet.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Older" data-search="older anchors still used in questions sir robert walpole 1676-1745 older reference key facts + transcripts remembered as the first prime minister, serving from 1721 to 1742. walpole = first pm.">
+            <article class="person-card" data-priority="Older" data-search="older anchors still used in questions sir robert walpole 1676-1745 older reference key facts + transcripts remembered as the first prime minister, serving from 1721 to 1742.">
                 <div class="card-top">
                     <h3>Sir Robert Walpole</h3>
                     <span class="badge older">Older</span>
                 </div>
                 <div class="years">1676-1745</div>
                 <p class="note">Remembered as the first Prime Minister, serving from 1721 to 1742.</p>
-                <p class="hook">Walpole = first PM.</p>
                 <div class="source">Reference key facts + transcripts</div>
             </article>
             
 
-            <article class="person-card" data-priority="Older" data-search="older anchors still used in questions thomas chippendale 1718-1779 older reference + transcripts furniture designer named in the design section; older than the 1900 scope but appears as a design recognition fact. chippendale = furniture.">
+            <article class="person-card" data-priority="Older" data-search="older anchors still used in questions thomas chippendale 1718-1779 older reference + transcripts furniture designer named in the design section; older than the 1900 scope but appears as a design recognition fact.">
                 <div class="card-top">
                     <h3>Thomas Chippendale</h3>
                     <span class="badge older">Older</span>
                 </div>
                 <div class="years">1718-1779</div>
                 <p class="note">Furniture designer named in the design section; older than the 1900 scope but appears as a design recognition fact.</p>
-                <p class="hook">Chippendale = furniture.</p>
                 <div class="source">Reference + transcripts</div>
             </article>
             
